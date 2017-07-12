@@ -1,0 +1,15 @@
+import time
+from envirophat import light
+
+out = open('enviro.log', 'w')
+out.write('light\trgb\n')
+
+try:
+    while True:
+        lux = light.light()
+        rgb = str(light.rgb())[1:-1].replace(' ', '')
+        out.write('%f\t%s\n' % (lux, rgb))
+        time.sleep(1)
+
+except KeyboardInterrupt:
+    out.close()
