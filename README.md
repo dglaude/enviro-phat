@@ -1,3 +1,5 @@
+I am only interested in TCS3472 colour sensor, so this fork and in particular the light-only branch will try to remove all the piece not related to colour sensor.
+
 # Enviro pHAT
 
 https://shop.pimoroni.com/products/enviro-phat
